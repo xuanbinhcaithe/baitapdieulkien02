@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 02</title>
+</head>
+<body>
+<!-- chuyển met sang feet với công thức ft=m*3.2808 -->
+    GIÁ TRỊ MET:
+    <input type="text" id="met" value="">
+    <input type="button" id="feet" onclick="convert()" value="CONVERT"><br>
+    GIÁ TRỊ FEED TƯƠNG ỨNG:
+    <input type="text" id="result" value="">
+    <script type="text/javascript">
+        function convert() {
+            let met=parseFloat(document.getElementById("met").value);
+            let feet=met*3.2808;
+            document.getElementById("result").value=feet;
+        }
+    </script>
+
+</body>
+</html>

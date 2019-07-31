@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập số 04</title>
+</head>
+<body>
+    <!-- tính diện tích hình chữ nhật khi biết 2 cạnh a và b-->
+    CẠNH THỨ NHẤT:
+    <input id="canh1" type="text" value="">
+    CẠNH THỨ HAI:
+    <input id="canh2" type="text" value="">
+    <input type="button" onclick="tinhToan()" value="CKICK HERE"><br>
+    DIỆN TÍCH :
+    <input id="result" type="text" value="">
+<script type="text/javascript">
+    function tinhToan() {
+        let a=parseFloat(document.getElementById("canh1").value);
+        let b=parseFloat(document.getElementById("canh2").value);
+        let s=a*b;
+        document.getElementById("result").value=s;
+    }
+</script>
+
+
+
+</body>
+</html>

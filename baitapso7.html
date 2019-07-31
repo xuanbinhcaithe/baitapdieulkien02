@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập số 7</title>
+</head>
+<body>
+    <!--giải phương trình bậc 2 có dạng ax2 + bx +c =0 -->
+    Hệ số a:
+    <input id="heso_a" type="text" value=""><br><br>
+    Hệ số b:
+    <input id="heso_b" type="text" value=""><br><br>
+    Hệ số c:
+    <input id="heso_c" type="text" value=""><br><br>
+    <input type="button" onclick="tinhToan()" value="THỰC HIỆN"><br><br>
+    Nghiệm: <b id="result" ></b>
+
+    <script type="text/javascript">
+        function tinhToan() {
+            let a=parseFloat(document.getElementById("heso_a").value);
+            let b=parseFloat(document.getElementById("heso_b").value);
+            let c=parseFloat(document.getElementById("heso_c").value);
+            let x;
+            if (a===0) {
+                if (b===0) {
+                    if (c===0) {
+                        x="vô số nghiệm";
+                    } else {
+                        x="vô nghiệm";
+                    }
+                } else {
+                    x= "phương trình có nghiệm là x =" + (-c)/b;
+                }
+            }else {
+                let delta=b*b-(4*a*c);
+                if (delta<0){
+                    x= "phương trình vô nghiệm";
+                } else if (delta===0) {
+                    x= (-b)/(2*a);
+                }else {
+                    let d = Math.sqrt(delta);
+                    x="phương trình có nghiệm x1 = "+ (-b+d)/(2*a)+ " và x2 = "+(-b-d)/(2*a);
+                }
+            }
+            document.getElementById("result").innerHTML = x;
+            
+        }
+    </script>
+
+</body>
+</html>

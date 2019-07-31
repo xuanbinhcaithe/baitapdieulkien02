@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập số 6</title>
+</head>
+<body>
+    <!-- giải phương trình bậc nhất ax+b=0-->
+    HỆ SỐ a:
+    <input id="heso_a" type="text" value=""><br>
+    HỆ SỐ b:
+    <input id="heso_b" type="text" value=""><br>
+    <input type="button" onclick="tinhToan()" value="THƯC HIỆN TÍNH TOÁN"><br>
+    NGHIỆM:
+    <b id="result">dđ</b>
+<script type="text/javascript">
+    function tinhToan() {
+        let a=parseFloat(document.getElementById("heso_a").value);
+        let b=parseFloat(document.getElementById("heso_b").value);
+        let x;
+        if (a===0) {
+            if (b===0) {
+                x="vô số nghiệm";
+            } else {
+                x="vô nghiệm";
+            }
+        } else {
+            x= "phương trình có nghiệm là x =" + (-b)/a;
+        }
+        document.getElementById("result").innerHTML=x;
+
+
+    }
+</script>
+
+</body>
+</html>

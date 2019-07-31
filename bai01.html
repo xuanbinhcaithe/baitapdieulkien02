@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 01</title>
+</head>
+<body>
+    <!-- chuyển độ C sang độ F-->
+    GIÁ TRỊ ĐỘ C:
+    <input id="dauvao" type="text" value="">
+    <input type="button" onclick="convert()" value="CONVERT"><br>
+    GIÁ TRỊ FEER TƯƠNG ỨNG:
+    <input id="daura" type="text" value="">
+
+    <script type="text/javascript">
+        function convert() {
+            let a=parseFloat(document.getElementById("dauvao").value);
+            let f=a*9/5+32;
+            document.getElementById("daura").value=f;
+        }
+    </script>
+</body>
+</html>

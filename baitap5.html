@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập số 5</title>
+</head>
+<body>
+    <!-- tính diện tích tam giác vuông khi biết hai cạnh kề a và b-->
+    CẠNH THỨ NHẤT:
+    <input id="canh1" type="text" value=""><br>
+    CẠNH THỨ 2:
+    <input id="canh2" type="text" value=""><br>
+    <input type="button" onclick="tinhToan()" value="THỰC HIỆN"><br>
+    DIỆN TÍCH TAM GIÁC:
+    <input id="result" type="text" value="">
+
+    <script type="text/javascript">
+        function tinhToan() {
+            let a = parseFloat(document.getElementById("canh1").value);
+            let b = parseFloat(document.getElementById("canh2").value);
+            let s = a * b / 2;
+            document.getElementById("result").value = s;
+        }
+    </script>
+
+</body>
+</html>

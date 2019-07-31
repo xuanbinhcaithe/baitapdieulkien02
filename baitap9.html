@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập số 9</title>
+</head>
+<body>
+    <!-- viết chương trình nhập vào 3 số thực và kiểm tra chúng có phải là cạnh của một hình tam giác không -->
+    CẠNH THỨ NHẤT:
+    <input type="text" id="canh1">
+    CẠNH THỨ HAI:
+    <input type="text" id="canh2">
+    CẠNH THỨ BA:
+    <input type="text" id="canh3" >
+    <input type="button" onclick="check()" value="CHECK"><br>
+    KẾT QUẢ:
+    <b id="result"></b>
+    <script type="text/javascript">
+        function check() {
+            let a=parseFloat(document.getElementById("canh1").value);
+            let b=parseFloat(document.getElementById("canh2").value);
+            let c=parseFloat(document.getElementById("canh3").value);
+            let x= (a>0 && a >0 && c >0 && (a+b)>c && (b+c)>a && (a+c)>b)?" đây là 3 cạnh của một tam giác":"đây không là 3 cạnh của tam giác";
+            document.getElementById("result").innerHTML=x;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 03</title>
+</head>
+<body>
+<!-- tính diện tích hình vuông khi biết cạnh a-->
+CẠNH HÌNH VUÔNG:
+<input id="giatri" value="" type="text">
+<input type="button" onclick="tinhtoan()" value="THỰC HIỆN"><br>
+DIỆN TÍCH TƯƠNG ỨNG:
+<input id="ketqua" type="text" value="">
+<script type="text/javascript">
+    function tinhtoan() {
+        let a=parseFloat(document.getElementById("giatri").value);
+        let result =a*a;
+        document.getElementById("ketqua").value = result;
+    }
+</script>
+
+</body>
+</html>

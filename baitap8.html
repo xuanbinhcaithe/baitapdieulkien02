@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập số 8 </title>
+</head>
+<body>
+    <!-- kiểm tra xem số nguyên nhập vào có phải là số tuổi của một người hay không (0<tuoi<120) -->
+   NHẬP TUỔI :
+<input id="input" type="text" value="">
+<input type="button" id="check" onclick="convert()" value="KIEM TRA">
+<P id="result"></P>
+    <script type="text/javascript">
+        function convert() {
+            let a =parseFloat(document.getElementById("input").value);
+            let x= (a>0 && a<=120)? "số tuổi hợp lệ" : "số tuổi không hợp lệ" ;
+        document.getElementById("result").innerHTML=x;
+        }
+    </script>
+
+</body>
+</html>
